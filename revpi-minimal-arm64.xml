@@ -1,8 +1,7 @@
 <!--
 SPDX-License-Identifier: 0BSD
-SPDX-FileCopyrightText: Linutronix GmbH
--->
-<ns0:RootFileSystem xmlns:ns0="https://www.linutronix.de/projects/Elbe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2009-05-20T08:50:56" revision="6" xsi:schemaLocation="https://www.linutronix.de/projects/Elbe dbsfed.xsd">
+SPDX-FileCopyrightText: KUNBUS GmbH
+--><ns0:RootFileSystem xmlns:ns0="https://www.linutronix.de/projects/Elbe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2009-05-20T08:50:56" revision="6" xsi:schemaLocation="https://www.linutronix.de/projects/Elbe dbsfed.xsd">
 <project>
 	<name>revpi-minimal-arm64</name>
 	<version>0.1</version>
@@ -18,6 +17,16 @@ SPDX-FileCopyrightText: Linutronix GmbH
 			<url>
 				<binary>http://security.debian.org/debian-security bullseye-security main</binary>
 				<source>http://security.debian.org/debian-security bullseye-security main</source>
+			</url>
+			<url>
+				<binary>http://packages.revolutionpi.de bullseye main contrib</binary>
+				<source>http://packages.revolutionpi.de bullseye main contrib</source>
+				<key>https://raw.githubusercontent.com/zhan-kunbus/files4elbe/master/revpi.gpg.key</key>
+			</url>
+			<url>
+				<binary>http://archive.raspberrypi.org/debian/ buster main</binary>
+				<source>http://archive.raspberrypi.org/debian/ buster main</source>
+				<key>http://archive.raspberrypi.org/debian/raspberrypi.gpg.key</key>
 			</url>
 		</url-list>
 	</mirror>
@@ -64,11 +73,20 @@ SPDX-FileCopyrightText: Linutronix GmbH
 	<pkg-list>
 		<pkg>bash</pkg>
 		<pkg>busybox</pkg>
+		<pkg>revpi-wallpaper</pkg>
+		<pkg>raspberrypi-kernel</pkg>
+		<pkg>revpi-firmware</pkg>
+		<!--
+		<pkg>revpi-tools</pkg>
+		<pkg>piserial</pkg>
+		<pkg>pitest</pkg>
+		-->
 		<!--
 		    explicit install of systemd, since debootstrap
 		    variant minbase has no default init system.
 		-->
 		<pkg>systemd</pkg>
+		<pkg>systemd-sysv</pkg>
 	</pkg-list>
 </target>
 </ns0:RootFileSystem>
