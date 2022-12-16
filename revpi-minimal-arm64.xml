@@ -89,5 +89,14 @@ SPDX-FileCopyrightText:  Copyright 2022 KUNBUS GmbH
 		<pkg>systemd</pkg>
 		<pkg>systemd-sysv</pkg>
 	</pkg-list>
+	<finetuning>
+		<cp path="/boot/overlays/revpi-dt-blob.dtbo">/boot/dt-blob.bin</cp>
+		<!-- cleanup image -->
+		<rm>/var/cache/apt/archives/*.deb</rm>
+		<rm>/var/cache/apt/*.bin</rm>
+		<rm>/var/lib/apt/lists/*</rm>
+		<rm>/tmp/*</rm>
+		<rm>/var/tmp/*</rm>
+	</finetuning>
 </target>
 </ns0:RootFileSystem>
