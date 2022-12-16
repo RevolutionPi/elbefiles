@@ -76,6 +76,11 @@ SPDX-FileCopyrightText:  Copyright 2022 KUNBUS GmbH
 		<pkg>init</pkg>
 		<pkg>udev</pkg>
 		<pkg>kmod</pkg>
+		<!-- some additional usefull packages -->
+		<pkg>bash</pkg>
+		<pkg>busybox</pkg>
+		<pkg>less</pkg>
+		<pkg>vim</pkg>
 		<!-- essential revpi packages -->
 		<pkg>raspberrypi-kernel</pkg>
 		<pkg>revpi-firmware</pkg>
