@@ -72,22 +72,15 @@ SPDX-FileCopyrightText:  Copyright 2022 KUNBUS GmbH
 		</bylabel>
 	</fstab>
 	<pkg-list>
-		<pkg>bash</pkg>
-		<pkg>busybox</pkg>
-		<pkg>revpi-wallpaper</pkg>
+		<!-- essential base packages -->
+		<pkg>init</pkg>
+		<pkg>udev</pkg>
+		<pkg>kmod</pkg>
+		<!-- essential revpi packages -->
 		<pkg>raspberrypi-kernel</pkg>
 		<pkg>revpi-firmware</pkg>
-		<!--
 		<pkg>revpi-tools</pkg>
-		<pkg>piserial</pkg>
 		<pkg>pitest</pkg>
-		-->
-		<!--
-		    explicit install of systemd, since debootstrap
-		    variant minbase has no default init system.
-		-->
-		<pkg>systemd</pkg>
-		<pkg>systemd-sysv</pkg>
 	</pkg-list>
 	<finetuning>
 		<cp path="/boot/overlays/revpi-dt-blob.dtbo">/boot/dt-blob.bin</cp>
