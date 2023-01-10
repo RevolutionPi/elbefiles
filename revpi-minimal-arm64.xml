@@ -88,6 +88,8 @@ SPDX-FileCopyrightText:  Copyright 2022 KUNBUS GmbH
 		<pkg>revpi-firmware</pkg>
 		<pkg>revpi-tools</pkg>
 		<pkg>pitest</pkg>
+		<!-- luxury packages-->
+		<pkg>openssh-server</pkg>
 	</pkg-list>
 	<finetuning>
 		<cp path="/boot/overlays/revpi-dt-blob.dtbo">/boot/dt-blob.bin</cp>
