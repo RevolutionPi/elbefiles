@@ -81,6 +81,8 @@ SPDX-FileCopyrightText:  Copyright 2022 KUNBUS GmbH
 		<pkg>busybox</pkg>
 		<pkg>less</pkg>
 		<pkg>vim</pkg>
+		<!-- networking support -->
+		<pkg>network-manager</pkg>
 		<!-- essential revpi packages -->
 		<pkg>raspberrypi-kernel</pkg>
 		<pkg>revpi-firmware</pkg>
