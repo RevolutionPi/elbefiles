@@ -84,6 +84,7 @@ SPDX-FileCopyrightText:  Copyright 2022 KUNBUS GmbH
 		<!-- networking support -->
 		<pkg>network-manager</pkg>
 		<!-- essential revpi packages -->
+		<pkg>raspberrypi-bootloader</pkg>
 		<pkg>raspberrypi-kernel</pkg>
 		<pkg>revpi-firmware</pkg>
 		<pkg>revpi-tools</pkg>
