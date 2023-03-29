@@ -2,7 +2,7 @@
 SPDX-License-Identifier: MIT
 SPDX-FileCopyrightText:  Copyright 2022 KUNBUS GmbH
 -->
-<ns0:RootFileSystem xmlns:ns0="https://www.linutronix.de/projects/Elbe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2009-05-20T08:50:56" revision="6" xsi:schemaLocation="https://www.linutronix.de/projects/Elbe dbsfed.xsd">
+<ns0:RootFileSystem xmlns:ns0="https://www.linutronix.de/projects/Elbe" xmlns:xi="http://www.w3.org/2003/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" created="2009-05-20T08:50:56" revision="6" xsi:schemaLocation="https://www.linutronix.de/projects/Elbe dbsfed.xsd">
 <project>
 	<name>revpi-minimal-arm64</name>
 	<version>0.1</version>
