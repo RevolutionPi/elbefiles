@@ -103,4 +103,5 @@ SPDX-FileCopyrightText:  Copyright 2022 KUNBUS GmbH
 		<adduser uid="1000" shell="/bin/bash" passwd="raspberry">pi</adduser>
 	</finetuning>
 </target>
+<archivedir>./archive/</archivedir>
 </ns0:RootFileSystem>
