@@ -25,8 +25,8 @@ SPDX-FileCopyrightText:  Copyright 2022 KUNBUS GmbH
 				<xi:include href="includes/revpikey.xml" />
 			</url>
 			<url>
-				<binary>http://archive.raspberrypi.org/debian/ buster main</binary>
-				<source>http://archive.raspberrypi.org/debian/ buster main</source>
+				<binary>http://archive.raspberrypi.org/debian/ bullseye main</binary>
+				<source>http://archive.raspberrypi.org/debian/ bullseye main</source>
 				<key>http://archive.raspberrypi.org/debian/raspberrypi.gpg.key</key>
 			</url>
 		</url-list>
