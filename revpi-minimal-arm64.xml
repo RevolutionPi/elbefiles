@@ -22,7 +22,7 @@ SPDX-FileCopyrightText:  Copyright 2022 KUNBUS GmbH
 			<url>
 				<binary>http://packages.revolutionpi.de bullseye main contrib</binary>
 				<source>http://packages.revolutionpi.de bullseye main contrib</source>
-				<key>https://raw.githubusercontent.com/zhan-kunbus/files4elbe/master/revpi.gpg.key</key>
+				<xi:include href="includes/revpikey.xml" />
 			</url>
 			<url>
 				<binary>http://archive.raspberrypi.org/debian/ buster main</binary>
